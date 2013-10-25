@@ -8,8 +8,11 @@ int B[NMAX][NMAX];
 int C[NMAX][NMAX];
 
 //Afisarea
-//void afisare() {
-//}
+void afisare() {
+	for (int i = 0; i < N; ++ i, printf("\n"))
+		for (int j = 0; j < N; ++j)
+			printf("%d ",C[i][j]);
+}
 //
 //void citire() {
 //}
