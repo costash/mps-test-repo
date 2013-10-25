@@ -1,0 +1,48 @@
+body {
+	background: #FFF;
+}
+
+#game {
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+#game .cell {
+	width: 38px;
+	height: 38px;
+	margin: 5px;
+	position: absolute;
+	background: #EEE;
+	border: 1px solid #999;
+}
+
+#game .cell:hover {
+	cursor: pointer;
+	border-radius: 5px;
+	transform: scale(1.1);
+	transition: all 0.2s;
+}
+
+#game .cell[player='1'] {
+	background: #32E58C;
+	border-radius: 50%;
+}
+
+#game .cell[player='0'] {
+	background: #E53232;
+	border-radius: 50%;
+}
+
+#win {
+	width: 200px;
+	padding: 10px;
+	margin: -20px 0 0 -100px;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: #FFF;
+	border: 5px solid #999;
+	display: none;
+}
