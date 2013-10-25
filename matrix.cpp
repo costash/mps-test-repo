@@ -11,7 +11,7 @@ int B[NMAX][NMAX];
 int C[NMAX][NMAX];
 
 //Afisarea
-void afisare() {
+void afisare(int C[NMAX][NMAX]) {
 	for (int i = 0; i < N; ++ i, printf("\n"))
 		for (int j = 0; j < N; ++j)
 			printf("%d ",C[i][j]);
@@ -62,13 +62,19 @@ void inmultire() {
 //
 //
 int main() {
+
 	citire();
-	adunare();
-	printf("Adunare:\n");
-	afisare();
+	printf("A:\n");
+	afisare(A);
+	printf("B:\n");
+	afisare(B);
 	printf("Inmultire:\n");
 	inmultire();
-	afisare();
+
+	afisare(C);
+	adunare();
+	printf("Adunare:\n");
+	afisare(C);
 	return 0;
 }
 
