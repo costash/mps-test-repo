@@ -1,7 +1,10 @@
 #include <iostream>
-
+#include <fstream>
+#include <cstdio>
 #define NMAX 100
-#define N 10
+
+using namespace std;
+int  N;
 
 int A[NMAX][NMAX];
 int B[NMAX][NMAX];
@@ -21,7 +24,8 @@ void citire() {
 	ifstream g("matrix2.txt");
 
 	f>>na;
-	g>>nb
+	g>>nb;
+	N = na;
 	for(i = 0; i < na; i++)
 	{
 		for(j = 0; j < na; j++)
@@ -34,7 +38,7 @@ void citire() {
 	{
 		for(j = 0; j < nb; j++)
 		{
-			g>>b[i][j];
+			g>>B[i][j];
 		}
 	}
 }
