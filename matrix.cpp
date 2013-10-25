@@ -19,15 +19,15 @@ void afisare() {
 //
 void adunare() {
 int i,j;
-for (i=0;i<NMAX;i++)
-	for (j=0;j<NMAX;j++)
+for (i=0;i<N;i++)
+	for (j=0;j<N;j++)
 	C[i][j]=A[i][j]+B[i][j];
 }
 void inmultire() {
 	for (int i = 0; i < N; ++i) {
 		for (int j = 0; j < N; ++j) {
 			for (int k = 0; k < N; ++k) {
-				C[i][j] += A[i][k] + B[k][j];
+				C[i][j] += A[i][k] * B[k][j];
 			}
 		}
 	}
