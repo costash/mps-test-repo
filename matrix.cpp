@@ -31,8 +31,14 @@ void inmultire() {
 //
 //
 //
-//int main() {
-//
-//	return 0;
-//	}
-//
+int main() {
+	citire();
+	adunare();
+	printf("Adunare:\n");
+	afisare();
+	printf("Inmultire:\n");
+	inmultire();
+	afisare();
+	return 0;
+}
+
