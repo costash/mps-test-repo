@@ -11,8 +11,30 @@ int C[NMAX][NMAX];
 //void afisare() {
 //}
 //
-//void citire() {
-//}
+void citire() {
+	int i, j, na, nb;
+	
+	ifstream f("matrix1.txt");
+	ifstream g("matrix2.txt");
+
+	f>>na;
+	g>>nb
+	for(i = 0; i < na; i++)
+	{
+		for(j = 0; j < na; j++)
+		{
+			f>>A[i][j];
+		}
+	}
+	
+	for(i = 0; i < nb; i++)
+	{
+		for(j = 0; j < nb; j++)
+		{
+			g>>b[i][j];
+		}
+	}
+}
 //
 //void adunare() {
 //}
