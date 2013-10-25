@@ -14,8 +14,12 @@ int C[NMAX][NMAX];
 //void citire() {
 //}
 //
-//void adunare() {
-//}
+void adunare() {
+int i,j;
+for (i=0;i<NMAX;i++)
+	for (j=0;j<NMAX;j++)
+	C[i][j]=A[i][j]+B[i][j];
+}
 void inmultire() {
 	for (int i = 0; i < N; ++i) {
 		for (int j = 0; j < N; ++j) {
