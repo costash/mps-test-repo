@@ -8,8 +8,11 @@ int B[NMAX][NMAX];
 int C[NMAX][NMAX];
 
 //Afisarea
-//void afisare() {
-//}
+void afisare() {
+	for (int i = 0; i < N; ++ i, printf("\n"))
+		for (int j = 0; j < N; ++j)
+			printf("%d ",C[i][j]);
+}
 //
 void citire() {
 	int i, j, na, nb;
@@ -36,13 +39,17 @@ void citire() {
 	}
 }
 //
-//void adunare() {
-//}
+void adunare() {
+int i,j;
+for (i=0;i<N;i++)
+	for (j=0;j<N;j++)
+	C[i][j]=A[i][j]+B[i][j];
+}
 void inmultire() {
 	for (int i = 0; i < N; ++i) {
 		for (int j = 0; j < N; ++j) {
 			for (int k = 0; k < N; ++k) {
-				C[i][j] += A[i][k] + B[k][j];
+				C[i][j] += A[i][k] * B[k][j];
 			}
 		}
 	}
@@ -50,8 +57,14 @@ void inmultire() {
 //
 //
 //
-//int main() {
-//
-//	return 0;
-//	}
-//
+int main() {
+	citire();
+	adunare();
+	printf("Adunare:\n");
+	afisare();
+	printf("Inmultire:\n");
+	inmultire();
+	afisare();
+	return 0;
+}
+
