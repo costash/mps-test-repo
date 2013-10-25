@@ -1,6 +1,25 @@
-#include <iostream>
+nclude <iostream>
 
-int main() {
+int A[NMAX][NMAX];
+int B[NMAX][NMAX];
 
-	return 0;
-}
+
+//Afisarea
+//void afisare() {
+//}
+//
+//void citire() {
+//}
+//
+//void adunare() {
+//}
+//void inmultire() {
+//}
+//
+//
+//
+//int main() {
+//
+//	return 0;
+//	}
+//
